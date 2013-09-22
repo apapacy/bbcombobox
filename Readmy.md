@@ -1,4 +1,4 @@
-=BBCombobox.js
+#BBCombobox.js
 
 Component database combobox widget.
 Not only autocomplit.
@@ -11,12 +11,12 @@ If you need to place value of component (*keyValue*) to userdefined html input e
 
 For backend all of RESTfull product available. But for PHP developer present 2 helper class. Standalone BBCombobox.php (for PDO connection). And for CodeIgniter user My_Controller.php.
 
-=Requirments
+#Requirments
 
 So, for JavaScript you must configure Require.js with DomReady! plugin. It's load you class.
 Basckbone.js - is main of libraries. But you must configure it with jQuery, Underscore, JSON2 - uff...
 
-=Simple usage
+#Simple usage
 
   requirejs.config({
     waitSeconds: 240,
@@ -43,7 +43,7 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
     store: 'input1'
   });
   
-=Backend configuration
+#Backend configuration
 
   $combo = new BBCombobox( array (
   'connectionString'=>"pgsql:host=localhost;dbname=Ceh16;user=root;password=26682316",
@@ -56,6 +56,6 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
   ) );
 
   
-=Example
+#Example
 
 (http://apapacy.zz.mu.test_combobox_pdo.html)
