@@ -2,7 +2,7 @@
  * @overview Autocompite commbobox based on Backbone library
  * @module combobox/Combobox.js
  * @licence MIT
- * @copyright Andrey Ovcharenko <An6rey@google.com>
+ * @copyright Andrey Ovcharenko <An6rey@google.com> from Kharkiv
  * @exports Constructor
  */
 define( [ /* require Requirejs, jQuery, Backbone( =>Underscore, JSON2 ) */ 'domReady!' ], function( ) {
