@@ -18,44 +18,44 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
 
 #Simple usage
 
-`  requirejs.config({
-    waitSeconds: 240,
-     baseUrl: 'bhv/vendors',
-     paths: {
-       bhv: '..',
-       app: '../../test',
-       cms: '../../cms'
-     },
-     urlArgs: "bust=" + (new Date()).getTime(),
-     map: {
-       '*' : {'jquery': 'jquery-1.9.1'}
-     }
-  });
+`	 requirejs.config({
+		waitSeconds: 240,
+		 baseUrl: 'bhv/vendors',
+		 paths: {
+			 bhv: '..',
+			 app: '../../test',
+			 cms: '../../cms'
+		 },
+		 urlArgs: "bust=" + (new Date()).getTime(),
+		 map: {
+			 '*' : {'jquery': 'jquery-1.9.1'}
+		 }
+	});
 
-  requirejs(['bhv/widget/combobox/BBCombobox', 'domReady!'], function ( bbcmb ) {
+	requirejs(['bhv/widget/combobox/BBCombobox', 'domReady!'], function ( bbcmb ) {
 
-  combobox1 = new bbcmb({
-    parent: 'combo1', /*userdefined span html element*/
-    url: 'test_pdo.php', /*url to backend script*/
-    keyName: 'id',
-    searchName: 'name',
-    displayName: 'richName',
-    store: 'input1'
-  });`
-  
+	combobox1 = new bbcmb({
+		parent: 'combo1', /*userdefined span html element*/
+		url: 'test_pdo.php', /*url to backend script*/
+		keyName: 'id',
+		searchName: 'name',
+		displayName: 'richName',
+		store: 'input1'
+	});`
+	
 #Backend configuration
 
-`  $combo = new BBCombobox( array (
-  'connectionString'=>"pgsql:host=localhost;dbname=Ceh16;user=root;password=26682316",
-  'table'=>'abc',
-  'keyName'=>'id',
-  'searchName'=> 'name',
-  'displayName'=> '"name"||\'#\'||"id" as richName',
-  'order'=>'name',
-  'encoding'=>'UTF8'
-  ) );`
+`	 $combo = new BBCombobox( array (
+	'connectionString'=>"pgsql:host=localhost;dbname=Ceh16;user=root;password=26682316",
+	'table'=>'abc',
+	'keyName'=>'id',
+	'searchName'=> 'name',
+	'displayName'=> '"name"||\'#\'||"id" as richName',
+	'order'=>'name',
+	'encoding'=>'UTF8'
+	) );`
 
-  
+	
 #Example
 
 (http://apapacy.zz.mu.test_combobox_pdo.html)
