@@ -1,4 +1,4 @@
-= BBCombobox.js
+=BBCombobox.js
 
 Component database combobox widget.
 Not only autocomplit.
