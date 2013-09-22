@@ -1,0 +1,15 @@
+.bbcombobox_item_selected { background-color: brown;color:#ffffff; padding:1px 5px 5px 7px; overflow: auto}
+
+.bbcombobox_item {background-color: #ffffff; padding:3px 5px 3px 5px; overflow: auto}
+
+.bbcombobox_list_pane {position: absolute; top: 0px; left: 0px; display: none; border: solid 2px #999999}
+
+.bbcombobox_input {width:300px}
+
+.bbcombobox_next_page_view {border: outset 3px #777777;background-color: #CCC;font: arial}
+
+.bbcombobox_previous_page_view {border: outset 3px #777777;background-color: #CCC;font: arial}
+
+.bbcombobox_next_page_view_pressed {border: inset 3px #777777;background-color: #BBB;font: arial}
+
+.bbcombobox_previous_page_view_pressed {border: inset 3px #777777;background-color: #BBB;font: arial}
