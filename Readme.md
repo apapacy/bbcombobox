@@ -18,7 +18,7 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
 
 #Simple usage
 
-`	 requirejs.config({
+	 requirejs.config({
 		waitSeconds: 240,
 		 baseUrl: 'bhv/vendors',
 		 paths: {
@@ -41,11 +41,11 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
 		searchName: 'name',
 		displayName: 'richName',
 		store: 'input1'
-	});`
+	});
 	
 #Backend configuration
 
-`	 $combo = new BBCombobox( array (
+	 $combo = new BBCombobox( array (
 	'connectionString'=>"pgsql:host=localhost;dbname=Ceh16;user=root;password=26682316",
 	'table'=>'abc',
 	'keyName'=>'id',
@@ -53,7 +53,7 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
 	'displayName'=> '"name"||\'#\'||"id" as richName',
 	'order'=>'name',
 	'encoding'=>'UTF8'
-	) );`
+	) );
 
 	
 #Example
