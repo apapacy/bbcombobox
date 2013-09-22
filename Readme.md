@@ -46,16 +46,16 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
 #Backend configuration
 
 	 $combo = new BBCombobox( array (
-	'connectionString'=>"pgsql:host=localhost;dbname=Ceh16;user=root;password=26682316",
-	'table'=>'abc',
-	'keyName'=>'id',
-	'searchName'=> 'name',
-	'displayName'=> '"name"||\'#\'||"id" as richName',
-	'order'=>'name',
-	'encoding'=>'UTF8'
+		'connectionString'=>"pgsql:host=localhost;dbname=Ceh16;user=root;password=26682316",
+		'table'=>'abc',
+		'keyName'=>'id',
+		'searchName'=> 'name',
+		'displayName'=> '"name"||\'#\'||"id" as richName',
+		'order'=>'name',
+		'encoding'=>'UTF8'
 	) );
 
 	
 #Example
 
-(http://apapacy.zz.mu.test_combobox_pdo.html)
+[Cyryllic UTF-8 text]http://apapacy.zz.mu/ok/test_combobox_pdo.html
