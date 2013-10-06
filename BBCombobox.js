@@ -337,8 +337,9 @@ _.extend( Constructor.prototype, {
   },
 
   hideItems: function( ) {
-    this.inputView.$el.focus( );
     this.itemsView.$el.hide( );
+    this.inputView.el.focus( );
+    //this.inputView.el.select( );
   },
 
   /** Fetch collection from server with current searchValue */
@@ -484,24 +485,11 @@ var InputView = Backbone.View.extend( {
         this.model.set( 'active', false );
         this.$el.val( this.model.get( this.model.displayName ) );
         this.trigger('backbone:combobox:items:hide');
-        return;
+        return false;
       }
     }
 
-    if ( ! this.model.get('active') && e.which >= util.key.DELETE ) {
-      this.model.set( 'active', true );
-      //this.$el.val( this.model.get( this.model.searchName ) );
-      this.$el.val( this.model.get( '' ) );
-      //this.$el.select( );
-      this.trigger('backbone:combobox:items:show');
-      //return true;
-    }
-  
-    
-    if ( e.which >= util.key.DELETE || e.which == util.key.SPACE
-        || e.which == util.key.BACKSPACE) {
-      this.handleTimeout = window.setTimeout( this.setSearchValue, this.delay );
-    } else if ( e.which === util.key.UP ) {
+    if ( e.which === util.key.UP ) {
       this.model.items.selectPreviousItem( );
     } else if ( e.which === util.key.DOWN ) {
       this.model.items.selectNextItem( );
@@ -513,7 +501,19 @@ var InputView = Backbone.View.extend( {
       this.model.items.selectFirstItem( );
     } else if ( e.which === util.key.END ) {
       this.model.items.selectLastItem( );
+    } else {
+      this.handleTimeout = window.setTimeout( this.setSearchValue, this.delay );
     }
+    
+    if ( ! this.model.get('active') /*&& e.which >= util.key.DELETE*/ ) {
+      this.model.set( 'active', true );
+      //this.$el.val( this.model.get( this.model.searchName ) );
+      this.$el.val( this.model.get( '' ) );
+      //this.$el.select( );
+      this.trigger('backbone:combobox:items:show');
+      //return true;
+    }
+
   }
 } );
 
