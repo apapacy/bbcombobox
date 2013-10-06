@@ -61,6 +61,8 @@ Basckbone.js - is main of libraries. But you must configure it with jQuery, Unde
 Cyryllic UTF-8 text http://apapacy.zz.mu/ok/test_combobox_pdo.html
 
 
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/a3ffaf146f78f28b2cfb5e209f9d029b "githalytics.com")](http://githalytics.com/apapacy/bbcombobox)
+
 <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
